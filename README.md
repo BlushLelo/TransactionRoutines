@@ -7,8 +7,8 @@ This project was implemented using `Java 11, Maven 3.6.3`
 # Setup
 With docker compose just run `docker-compose up` from root directory the application will be up and running on `localhost:8081`
 
-#Endpoints 
-###POST /accounts
+# Endpoints 
+### POST /accounts
 `Request Body: 
 { 
 "document_number": "12345678900" 
@@ -17,7 +17,7 @@ With docker compose just run `docker-compose up` from root directory the applica
 document_number:  must have 11 characteres
 
 
-###GET /accounts/:accountId
+### GET /accounts/:accountId
 Response Body: 
 `{ 
 "account_id": 1, 
@@ -25,7 +25,7 @@ Response Body:
 "transactions": []
 } `
 
-###POST /transactions
+### POST /transactions
 `Request Body: 
 { 
 "account_id": 1, 
