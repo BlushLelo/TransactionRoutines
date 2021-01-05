@@ -13,14 +13,14 @@ services:
     expose:
       - '3306'
 
-  pismo-test:
-    image: joaooctf/pismotest:latest
-    ports:
-      - 8081:8081
-    depends_on:
-      - db
-    networks:
-      - pismotestnetwork
+#  pismo-test:
+#    image: joaooctf/pismotest:latest
+#    ports:
+#      - 8081:8081
+#    depends_on:
+#      - db
+#    networks:
+#      - pismotestnetwork
 
 networks:
   pismotestnetwork:
