@@ -1,7 +1,7 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-* The original package name 'com.pismo.test.Pismo Test' is invalid and this project uses 'com.pismo.test.Pismo.Test' instead.
+* The original package name 'com.pismo.test.pismo Test' is invalid and this project uses 'com.pismo.test.pismo.test' instead.
 
 # Getting Started
 
