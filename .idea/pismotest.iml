@@ -7,6 +7,7 @@
         <setting name="provider-name" value="Hibernate" />
         <datasource-mapping>
           <factory-entry name="entityManagerFactory" value="74c76f5a-c125-4d9a-876b-0463f916420a" />
+          <factory-entry name="pismotest" />
         </datasource-mapping>
         <naming-strategy-map />
       </configuration>
