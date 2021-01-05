@@ -1,24 +1,37 @@
-# Read Me First
-The following was discovered as part of building this project:
+# Overview
+This is a project for a technical interview on PISMO
 
-* The original package name 'com.pismo.test.pismo Test' is invalid and this project uses 'com.pismo.test.pismo.test' instead.
+#Stack
+This project was implemented using `Java 11, Maven 3.6.3`
 
-# Getting Started
+# Setup
+With docker compose just run `docker-compose up` from root directory the application will be up and running on `localhost:8081`
 
-### Reference Documentation
-For further reference, please consider the following sections:
+#Endpoints 
+###POST /accounts
+`Request Body: 
+{ 
+"document_number": "12345678900" 
+}`
 
-* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
-* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.4.1/maven-plugin/reference/html/)
-* [Create an OCI image](https://docs.spring.io/spring-boot/docs/2.4.1/maven-plugin/reference/html/#build-image)
-* [Spring Web](https://docs.spring.io/spring-boot/docs/2.4.1/reference/htmlsingle/#boot-features-developing-web-applications)
-* [Spring Data JPA](https://docs.spring.io/spring-boot/docs/2.4.1/reference/htmlsingle/#boot-features-jpa-and-spring-data)
+document_number:  must have 11 characteres
 
-### Guides
-The following guides illustrate how to use some features concretely:
 
-* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
-* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
-* [Building REST services with Spring](https://spring.io/guides/tutorials/bookmarks/)
-* [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
+###GET /accounts/:accountId
+Response Body: 
+`{ 
+"account_id": 1, 
+"document_number": "12345678900" ,
+"transactions": []
+} `
+
+###POST /transactions
+`Request Body: 
+{ 
+"account_id": 1, 
+"operation_type_id": 4, 
+"amount": 123.45 
+}`
+
+
 
